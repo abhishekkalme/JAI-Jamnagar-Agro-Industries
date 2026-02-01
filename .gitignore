@@ -1,0 +1,317 @@
+# Operating System Files
+# ====================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.directory
+.Trash-*
+.nfs*
+
+# IDE & Editor Files
+# ==================
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
+
+# JetBrains IDEs (WebStorm, PHPStorm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+Sessionx.vim
+.netrwhist
+tags
+[._]*.un~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Atom
+.atom/
+
+# Logs & Databases
+# ================
+
+# Log files
+*.log
+logs/
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Database files
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+
+# Dependency Directories
+# ======================
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+.pnp/
+.pnp.js
+
+# Bower
+bower_components/
+
+# Composer (PHP)
+vendor/
+
+# Build & Distribution
+# ====================
+
+# Build outputs
+dist/
+build/
+*.min.js
+*.min.css
+*.map
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Temporary & Cache Files
+# ========================
+
+# General temp files
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.cache
+*.pid
+*.seed
+*.pid.lock
+
+# Cache directories
+.cache/
+.temp/
+.tmp/
+*.cache/
+
+# Coverage & Testing
+# ==================
+
+# Test coverage
+coverage/
+*.lcov
+.nyc_output/
+lib-cov/
+
+# Jest
+jest-cache/
+
+# Environment & Config
+# ====================
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# Configuration files with sensitive data
+config.local.js
+secrets.json
+
+# Backup Files
+# ============
+
+# Backup files
+*.backup
+*.old
+*.orig
+*~.nib
+*.bak
+backup/
+backups/
+
+# Media & Assets (Optional)
+# =========================
+
+# Uncomment if you don't want to track large media files
+# *.mp4
+# *.avi
+# *.mov
+# *.wmv
+# *.flv
+# *.webm
+
+# Uncomment if you don't want to track PSD source files
+# *.psd
+# *.ai
+# *.sketch
+
+# Project Specific
+# ================
+
+# Reports and analysis files
+css_report.txt
+*_report.txt
+analysis/
+
+# Archive folders (if used for old/unused code)
+archive/
+_archive/
+old/
+_old/
+
+# Documentation drafts
+*.draft.md
+drafts/
+
+# Miscellaneous
+# =============
+
+# Package files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Compiled source
+*.pyc
+*.pyo
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache
+.parcel-cache
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+
+# Gatsby
+.cache/
+public/
+
+# Serverless
+.serverless/
+
+# FuseBox
+.fusebox/
+
+# DynamoDB Local
+.dynamodb/
+
+# TernJS
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# Temporary folders
+tmp/
+temp/

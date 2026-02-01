@@ -1,0 +1,220 @@
+/* ====================================
+   COMPACT HEADER / NAVBAR OPTIMIZATIONS
+   ==================================== */
+
+/* 1. Compact Top Bar */
+.top-bar-area {
+    padding: 0 !important; /* Remove wrapper padding to let children define height */
+    height: auto !important;
+    min-height: 30px;
+}
+
+.top-bar-area .social {
+    padding: 0 15px !important;
+    line-height: 32px; /* Set explicit line-height to match bar height */
+    height: 32px;
+    display: inline-block;
+}
+
+.top-bar-area .social ul {
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar-area .social ul li {
+    padding: 0;
+    margin: 0 5px;
+}
+
+.top-bar-area .social ul li a {
+   color: #fff;
+   display: inline-block;
+   line-height: 32px; /* Ensure icons are centered */
+}
+
+/* Adjust top bar list spacing */
+.top-bar-area ul li {
+    margin-right: 10px !important;
+    font-size: 12px; /* Slightly smaller text */
+    display: inline-block;
+}
+
+.top-bar-area p {
+    margin: 0 !important;
+    margin-right: 10px !important;
+    padding-right: 10px !important;
+    font-size: 12px;
+    line-height: 32px; /* Match social bar height */
+}
+
+/* 2. Compact Main Navbar */
+
+/* Logo Size */
+.navbar-brand img.logo {
+    max-height: 50px !important; 
+    width: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+/* Optimize Navigation Items to prevent wrapping */
+@media (min-width: 992px) {
+    /* Container adjustment to allow more width for menu if needed */
+    nav.navbar.validnavs .container {
+        max-width: 98% !important; /* Utilize full width on large screens */
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Target the links specifically */
+    nav.navbar.validnavs ul.nav > li > a {
+        padding: 15px 8px !important; /* Drastically reduced horizontal padding */
+        font-size: 13px !important; /* Smaller font size to fit all items */
+        line-height: 1.2;
+        text-transform: uppercase;
+        font-weight: 700;
+        white-space: nowrap; /* Prevent wrapping of individual items */
+    }
+
+    /* Reduce spacing between list items if any margins exist */
+    nav.navbar.validnavs ul.nav > li {
+        margin: 0 !important;
+    }
+
+    /* Compact Attribute Navigation (Right side icons) */
+    .navbar .attr-right .attr-nav li a {
+        padding: 15px 5px !important; 
+    }
+    
+    .navbar .attr-right .attr-nav li {
+        margin-left: 5px !important;
+    }
+    
+    .navbar .attr-right {
+        margin-left: 10px !important;
+        min-width: auto;
+    }
+}
+
+/* Sticky Navbar - Ultra Compact */
+nav.navbar.validnavs.navbar-sticky.sticked {
+    padding: 0 !important;
+}
+
+nav.navbar.validnavs.navbar-sticky.sticked ul.nav > li > a {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+nav.navbar.validnavs.navbar-sticky.sticked .navbar-brand img.logo {
+    max-height: 42px !important;
+}
+
+/* 3. Mobile Banner Fix */
+@media (max-width: 991px) {
+    .banner-area {
+        height: auto !important; /* Ensure generic auto height */
+    }
+    
+    .banner-area .swiper-slide {
+        padding: 60px 15px !important; /* Add spacing so bg is visible */
+    }
+
+    /* Make sure background thumb covers the allocated space */
+    .banner-thumb {
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100% !important;
+        z-index: 0;
+    }
+
+    /* Style the content box to float above */
+    .home-box {
+        position: relative;
+        z-index: 2;
+        padding: 20px !important; /* Internal padding */
+        background: #fff; /* Ensure readability */
+        border-radius: 15px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        margin: 0 15px; /* Add side margins so it doesn't touch edges */
+    }
+    
+    .banner-area .content {
+        padding-top: 0 !important; /* Reset existing large padding */
+    }
+}
+
+/* 4. Hero Section Resizing (User Request) */
+
+/* Reduce the width of the text box to make it more compact */
+@media (min-width: 1200px) {
+    .home-box {
+        max-width: 50% !important; /* Force it to be smaller than col-xl-7 */
+        flex: 0 0 50% !important;
+        margin-left: 80px !important; /* Move it right */
+    }
+}
+
+/* Adjust Content Padding */
+.home-box .content {
+    padding: 30px 40px !important; /* Reduced padding for tighter look */
+    border-radius: 12px !important;
+}
+
+/* Reduce Heading Sizes */
+.banner-style-one h2 {
+    font-size: 48px !important; /* Reduced from 80px */
+    margin-bottom: 5px !important; /* Tighter spacing */
+    line-height: 1.1 !important;
+}
+
+.banner-style-one h4 {
+    font-size: 18px !important; /* Reduced from 24px */
+    margin-bottom: 2px !important;
+}
+
+.banner-style-one h4::after {
+    bottom: -2px !important; /* Adjust underline position */
+}
+
+/* Reduce Paragraph Size */
+.banner-style-one p {
+    font-size: 15px !important; /* Reduced from 17px */
+    line-height: 1.6 !important;
+    margin-bottom: 20px !important;
+    max-width: 90%;
+}
+
+/* Adjust Button Spacing */
+.banner-style-one .button {
+    margin-top: 25px !important;
+}
+
+/* Reduce Banner Height implicitly by padding */
+.banner-style-one .swiper-slide {
+    padding-top: 100px !important; /* Reduced from 180px to move it up */
+    padding-bottom: 80px !important;
+}
+
+/* Adjust shape sizes to fit new font sizes */
+.banner-style-one h2 strong::after {
+    height: 50px !important;
+    width: 50px !important;
+    top: -20px !important;
+    right: -10px !important;
+}
+
+/* 5. Smaller Checkmark List Items */
+.check-solid-list li {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+}
+
+/* 6. About Section Image Adjustments */
+.about-style-one .thumb {
+    transform: scale(0.8) translateX(30px) !important;
+    transform-origin: left center;
+}
