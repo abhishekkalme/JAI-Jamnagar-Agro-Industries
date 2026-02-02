@@ -111,41 +111,7 @@ nav.navbar.validnavs.navbar-sticky.sticked .navbar-brand img.logo {
     max-height: 42px !important;
 }
 
-/* 3. Mobile Banner Fix */
-@media (max-width: 991px) {
-    .banner-area {
-        height: auto !important; /* Ensure generic auto height */
-    }
-    
-    .banner-area .swiper-slide {
-        padding: 60px 15px !important; /* Add spacing so bg is visible */
-    }
 
-    /* Make sure background thumb covers the allocated space */
-    .banner-thumb {
-        position: absolute !important;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100% !important;
-        z-index: 0;
-    }
-
-    /* Style the content box to float above */
-    .home-box {
-        position: relative;
-        z-index: 2;
-        padding: 20px !important; /* Internal padding */
-        background: #fff; /* Ensure readability */
-        border-radius: 15px;
-        box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-        margin: 0 15px; /* Add side margins so it doesn't touch edges */
-    }
-    
-    .banner-area .content {
-        padding-top: 0 !important; /* Reset existing large padding */
-    }
-}
 
 /* 4. Hero Section Resizing (User Request) */
 
@@ -155,6 +121,8 @@ nav.navbar.validnavs.navbar-sticky.sticked .navbar-brand img.logo {
         max-width: 50% !important; /* Force it to be smaller than col-xl-7 */
         flex: 0 0 50% !important;
         margin-left: 80px !important; /* Move it right */
+        /* margin-top: 80px !important; */
+        margin-bottom: 80px !important;
     }
 }
 
@@ -217,4 +185,124 @@ nav.navbar.validnavs.navbar-sticky.sticked .navbar-brand img.logo {
 .about-style-one .thumb {
     transform: scale(0.8) translateX(30px) !important;
     transform-origin: left center;
+}
+
+.history-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.pill {
+    display: inline-block;
+    padding: 8px 22px;
+    border: 2px solid #1fa84f;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.history-intro {
+    max-width: 900px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 50px;
+}
+
+.timeline {
+    position: relative;
+    margin-left: 80px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 78px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #000;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.year {
+    width: 70px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background: #fff;
+    margin: 10px 30px 0 30px;
+    flex-shrink: 0;
+}
+
+.timeline-item p {
+    max-width: 700px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 7. Product Description Styling */
+.product-description {
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.product-description p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 8. Why Choose Us Section */
+.why-choose-us-area .item-style-box {
+    background: #fff;
+    padding: 30px 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.why-choose-us-area .item-style-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.why-choose-us-area .icon {
+    font-size: 50px;
+    color: #1fa84f; /* Primary Green */
+    margin-bottom: 20px;
+}
+
+.why-choose-us-area h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.why-choose-us-area p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
 }
