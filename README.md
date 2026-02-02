@@ -308,11 +308,6 @@ None currently reported.
 
 # ⏱️ Development Time Tracking
 
-**Task Assigned:** 30 January 2026, 23:19  
-**Deadline:** 2 February 2026  
-
----
-
 ## Project Summary
 
 This task involved updating and stabilizing an existing website, focusing on content updates, layout consistency, navigation fixes, and final quality checks.
